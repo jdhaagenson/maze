@@ -15,37 +15,37 @@ const map = [
     "W       W       W   W",
     "WWWWWWWWWWWWWWWWWWWWW",
 ];
-let mapDivs = []
-const s = document.getElementById('maze')
-const displayBlock = function (blockChar, rowDiv) {
-    let blockDiv = document.createElement('div')
-    let counter = 0
-    blockDiv.classList.add("block")
-    if (blockChar === "W") {
-        blockDiv.classList.add("wall")
-        // blockDiv.innerText = ""
-    } else if (blockChar === " ") {
-        blockDiv.classList.add('floor')
-    } else if (blockChar === "S") {
-        blockDiv.classList.add('start')
-    } else if (blockChar === "F") {
-        blockDiv.classList.add('finish')
-    }
-    mapDivs.push(blockDiv)
-    rowDiv.appendChild(blockDiv)
-}
 
-const displayRow = function(rowStr, index) {
-    const maze = document.getElementById('maze')
-    let rowDiv = document.createElement('div')
-    rowDiv.classList.add('row')
-    maze.appendChild(rowDiv)
-    for (let colNum = 0; colNum < rowStr.length; colNum++) {
-        displayBlock(rowStr.charAt(colNum), rowDiv)
-    }
-}
 
-map.forEach(displayRow)
+// NOTE: Below creates divs dynamically, but needed to add ids, which I use to move player.
+
+// const displayBlock = function (blockChar, rowDiv) {
+//     let blockDiv = document.createElement('div')
+//     blockDiv.classList.add("block")
+//     if (blockChar === "W") {
+//         blockDiv.classList.add("wall")
+//         // blockDiv.innerText = ""
+//     } else if (blockChar === " ") {
+//         blockDiv.classList.add('floor')
+//     } else if (blockChar === "S") {
+//         blockDiv.classList.add('start')
+//     } else if (blockChar === "F") {
+//         blockDiv.classList.add('finish')
+//     }
+//     rowDiv.appendChild(blockDiv)
+// }
+
+// const displayRow = function(rowStr, index) {
+//     const maze = document.getElementById('maze')
+//     let rowDiv = document.createElement('div')
+//     rowDiv.classList.add('row')
+//     maze.appendChild(rowDiv)
+//     for (let colNum = 0; colNum < rowStr.length; colNum++) {
+//         displayBlock(rowStr.charAt(colNum), rowDiv)
+//     }
+// }
+
+// map.forEach(displayRow)
 
 let startDiv = document.getElementsByClassName('start')
 let playerDiv = document.createElement('div')
@@ -122,21 +122,4 @@ const movePlayer = function(event) {
 
 }
 
-
 document.addEventListener('keydown', movePlayer);
-
-// function move(event) {
-//     if (event.key === "ArrowDown") {
-//         boxTop += 32
-//     } else if (event.key === "ArrowUp") {
-//         boxTop -= 32
-//     } else if (event.key === "ArrowRight") {
-//         boxLeft += 32
-//     } else if (event.key === "ArrowLeft") {
-//         boxLeft -= 32
-//     }
-//     document.getElementById('box').style.top = boxTop + 'px'
-//     document.getElementById('box').style.left = boxLeft + 'px'
-// }
-
-
