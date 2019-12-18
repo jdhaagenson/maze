@@ -61,7 +61,7 @@ let playerPos = map[playerRow][playerBlock]
 
 const movePlayer = function(event) {
     switch (event.key) {
-        case "w":
+        case "ArrowUp":
             if (0 < playerRow < 14) {
                 console.log('still on map')
                 if (map[playerRow-1][playerBlock]==' ') {
@@ -73,7 +73,7 @@ const movePlayer = function(event) {
                 }
             }
             break;
-        case 's':
+        case 'ArrowDown':
             if (0 < playerRow < 14) {
                 console.log('still on map')
                 if (map[playerRow+1][playerBlock]==' ') {
@@ -85,7 +85,7 @@ const movePlayer = function(event) {
                 }
             }
             break;
-        case 'd':
+        case 'ArrowRight':
             if (0<playerBlock<22) {
                 console.log('still on map')
                 if (map[playerRow][playerBlock+1]==' ') {
@@ -104,7 +104,7 @@ const movePlayer = function(event) {
                 }
             }
             break;
-        case 'a':
+        case 'ArrowLeft':
             if (0<playerBlock<21) {
                 console.log('still on map')
                 if (map[playerRow][playerBlock-1]==" ") {
