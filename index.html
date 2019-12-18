@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <button id="reset" type="reset" onclick="location.reload()">Reset</button>
     <div id="maze">
         <div id="r0" class="row">
             <div class="block wall"></div>
@@ -103,7 +104,7 @@
         </div>
         <div id="r4" class="row">
             <div id="map[4][0]" class="block wall"></div>
-            <div id="map[4][1]" class="block wall"></div>
+            <div id="map[4][1]" class="block floor"></div>
             <div id="map[4][2]" class="block wall"></div>
             <div id="map[4][3]" class="block wall"></div>
             <div id="map[4][4]" class="block wall"></div>
@@ -111,130 +112,130 @@
             <div id="map[4][6]" class="block wall"></div>
             <div id="map[4][7]" class="block wall"></div>
             <div id="map[4][8]" class="block wall"></div>
-            <div id="map[4][9]" class="block wall"></div>
+            <div id="map[4][9]" class="block floor"></div>
             <div id="map[4][10]" class="block wall"></div>
-            <div id="map[4][11]" class="block wall"></div>
+            <div id="map[4][11]" class="block floor"></div>
             <div id="map[4][12]" class="block wall"></div>
             <div id="map[4][13]" class="block wall"></div>
             <div id="map[4][14]" class="block wall"></div>
-            <div id="map[4][15]" class="block wall"></div>
+            <div id="map[4][15]" class="block floor"></div>
             <div id="map[4][16]" class="block wall"></div>
-            <div id="map[4][17]" class="block wall"></div>
+            <div id="map[4][17]" class="block floor"></div>
             <div id="map[4][18]" class="block wall"></div>
-            <div id="map[4][19]" class="block wall"></div>
+            <div id="map[4][19]" class="block floor"></div>
             <div id="map[4][20]" class="block wall"></div>
         </div>
         <div id="r5" class="row">
             <div id="map[5][0]" class="block wall"></div>
-            <div id="map[5][1]" class="block wall"></div>
-            <div id="map[5][2]" class="block wall"></div>
-            <div id="map[5][3]" class="block wall"></div>
-            <div id="map[5][4]" class="block wall"></div>
-            <div id="map[5][5]" class="block wall"></div>
-            <div id="map[5][6]" class="block wall"></div>
-            <div id="map[5][7]" class="block wall"></div>
-            <div id="map[5][8]" class="block wall"></div>
-            <div id="map[5][9]" class="block wall"></div>
+            <div id="map[5][1]" class="block floor"></div>
+            <div id="map[5][2]" class="block floor"></div>
+            <div id="map[5][3]" class="block floor"></div>
+            <div id="map[5][4]" class="block floor"></div>
+            <div id="map[5][5]" class="block floor"></div>
+            <div id="map[5][6]" class="block floor"></div>
+            <div id="map[5][7]" class="block floor"></div>
+            <div id="map[5][8]" class="block floor"></div>
+            <div id="map[5][9]" class="block floor"></div>
             <div id="map[5][10]" class="block wall"></div>
-            <div id="map[5][11]" class="block wall"></div>
-            <div id="map[5][12]" class="block wall"></div>
-            <div id="map[5][13]" class="block wall"></div>
-            <div id="map[5][14]" class="block wall"></div>
-            <div id="map[5][15]" class="block wall"></div>
+            <div id="map[5][11]" class="block floor"></div>
+            <div id="map[5][12]" class="block floor"></div>
+            <div id="map[5][13]" class="block floor"></div>
+            <div id="map[5][14]" class="block floor"></div>
+            <div id="map[5][15]" class="block floor"></div>
             <div id="map[5][16]" class="block wall"></div>
-            <div id="map[5][17]" class="block wall"></div>
+            <div id="map[5][17]" class="block floor"></div>
             <div id="map[5][18]" class="block wall"></div>
-            <div id="map[5][19]" class="block wall"></div>
+            <div id="map[5][19]" class="block floor"></div>
             <div id="map[5][20]" class="block wall"></div>
         </div>
         <div id="r6" class="row">
             <div id="map[6][0]" class="block wall"></div>
-            <div id="map[6][1]" class="block wall"></div>
+            <div id="map[6][1]" class="block floor"></div>
             <div id="map[6][2]" class="block wall"></div>
             <div id="map[6][3]" class="block wall"></div>
             <div id="map[6][4]" class="block wall"></div>
-            <div id="map[6][5]" class="block wall"></div>
+            <div id="map[6][5]" class="block floor"></div>
             <div id="map[6][6]" class="block wall"></div>
             <div id="map[6][7]" class="block wall"></div>
             <div id="map[6][8]" class="block wall"></div>
             <div id="map[6][9]" class="block wall"></div>
             <div id="map[6][10]" class="block wall"></div>
-            <div id="map[6][11]" class="block wall"></div>
+            <div id="map[6][11]" class="block floor"></div>
             <div id="map[6][12]" class="block wall"></div>
             <div id="map[6][13]" class="block wall"></div>
             <div id="map[6][14]" class="block wall"></div>
             <div id="map[6][15]" class="block wall"></div>
             <div id="map[6][16]" class="block wall"></div>
-            <div id="map[6][17]" class="block wall"></div>
+            <div id="map[6][17]" class="block floor"></div>
             <div id="map[6][18]" class="block wall"></div>
-            <div id="map[6][19]" class="block wall"></div>
+            <div id="map[6][19]" class="block floor"></div>
             <div id="map[6][20]" class="block wall"></div>
         </div>
         <div id="r7" class="row">
             <div id="map[7][0]" class="block wall"></div>
-            <div id="map[7][1]" class="block wall"></div>
+            <div id="map[7][1]" class="block floor"></div>
             <div id="map[7][2]" class="block wall"></div>
-            <div id="map[7][3]" class="block wall"></div>
-            <div id="map[7][4]" class="block wall"></div>
-            <div id="map[7][5]" class="block wall"></div>
+            <div id="map[7][3]" class="block floor"></div>
+            <div id="map[7][4]" class="block floor"></div>
+            <div id="map[7][5]" class="block floor"></div>
             <div id="map[7][6]" class="block wall"></div>
-            <div id="map[7][7]" class="block wall"></div>
-            <div id="map[7][8]" class="block wall"></div>
-            <div id="map[7][9]" class="block wall"></div>
+            <div id="map[7][7]" class="block floor"></div>
+            <div id="map[7][8]" class="block floor"></div>
+            <div id="map[7][9]" class="block floor"></div>
             <div id="map[7][10]" class="block wall"></div>
-            <div id="map[7][11]" class="block wall"></div>
+            <div id="map[7][11]" class="block floor"></div>
             <div id="map[7][12]" class="block wall"></div>
-            <div id="map[7][13]" class="block wall"></div>
-            <div id="map[7][14]" class="block wall"></div>
-            <div id="map[7][15]" class="block wall"></div>
-            <div id="map[7][16]" class="block wall"></div>
-            <div id="map[7][17]" class="block wall"></div>
+            <div id="map[7][13]" class="block floor"></div>
+            <div id="map[7][14]" class="block floor"></div>
+            <div id="map[7][15]" class="block floor"></div>
+            <div id="map[7][16]" class="block floor"></div>
+            <div id="map[7][17]" class="block floor"></div>
             <div id="map[7][18]" class="block wall"></div>
-            <div id="map[7][19]" class="block wall"></div>
+            <div id="map[7][19]" class="block floor"></div>
             <div id="map[7][20]" class="block wall"></div>
         </div>
         <div id="r8" class="row">
             <div id="map[8][0]" class="block wall"></div>
-            <div id="map[8][1]" class="block wall"></div>
+            <div id="map[8][1]" class="block floor"></div>
             <div id="map[8][2]" class="block wall"></div>
             <div id="map[8][3]" class="block wall"></div>
             <div id="map[8][4]" class="block wall"></div>
             <div id="map[8][5]" class="block wall"></div>
             <div id="map[8][6]" class="block wall"></div>
-            <div id="map[8][7]" class="block wall"></div>
+            <div id="map[8][7]" class="block floor"></div>
             <div id="map[8][8]" class="block wall"></div>
-            <div id="map[8][9]" class="block wall"></div>
+            <div id="map[8][9]" class="block floor"></div>
             <div id="map[8][10]" class="block wall"></div>
-            <div id="map[8][11]" class="block wall"></div>
+            <div id="map[8][11]" class="block floor"></div>
             <div id="map[8][12]" class="block wall"></div>
-            <div id="map[8][13]" class="block wall"></div>
+            <div id="map[8][13]" class="block floor"></div>
             <div id="map[8][14]" class="block wall"></div>
             <div id="map[8][15]" class="block wall"></div>
             <div id="map[8][16]" class="block wall"></div>
-            <div id="map[8][17]" class="block wall"></div>
+            <div id="map[8][17]" class="block floor"></div>
             <div id="map[8][18]" class="block wall"></div>
-            <div id="map[8][19]" class="block wall"></div>
-            <div id="map[8][20]" class="block wall"></div>
+            <div id="map[8][19]" class="block floor"></div>
+            <div id="map[8][20]" class="block floor finish"></div>
         </div>
         <div id="r9" class="row">
-            <div id="map[9][0]" class="block wall"></div>
-            <div id="map[9][1]" class="block wall"></div>
-            <div id="map[9][2]" class="block wall"></div>
-            <div id="map[9][3]" class="block wall"></div>
-            <div id="map[9][4]" class="block wall"></div>
-            <div id="map[9][5]" class="block wall"></div>
+            <div id="map[9][0]" class="block start floor"></div>
+            <div id="map[9][1]" class="block floor"></div>
+            <div id="map[9][2]" class="block floor"></div>
+            <div id="map[9][3]" class="block floor"></div>
+            <div id="map[9][4]" class="block floor"></div>
+            <div id="map[9][5]" class="block floor"></div>
             <div id="map[9][6]" class="block wall"></div>
-            <div id="map[9][7]" class="block wall"></div>
+            <div id="map[9][7]" class="block floor"></div>
             <div id="map[9][8]" class="block wall"></div>
-            <div id="map[9][9]" class="block wall"></div>
+            <div id="map[9][9]" class="block floor"></div>
             <div id="map[9][10]" class="block wall"></div>
-            <div id="map[9][11]" class="block wall"></div>
+            <div id="map[9][11]" class="block floor"></div>
             <div id="map[9][12]" class="block wall"></div>
-            <div id="map[9][13]" class="block wall"></div>
+            <div id="map[9][13]" class="block floor"></div>
             <div id="map[9][14]" class="block wall"></div>
-            <div id="map[9][15]" class="block wall"></div>
+            <div id="map[9][15]" class="block floor"></div>
             <div id="map[9][16]" class="block wall"></div>
-            <div id="map[9][17]" class="block wall"></div>
+            <div id="map[9][17]" class="block floor"></div>
             <div id="map[9][18]" class="block wall"></div>
             <div id="map[9][19]" class="block wall"></div>
             <div id="map[9][20]" class="block wall"></div>
@@ -245,49 +246,49 @@
             <div id="map[10][2]" class="block wall"></div>
             <div id="map[10][3]" class="block wall"></div>
             <div id="map[10][4]" class="block wall"></div>
-            <div id="map[10][5]" class="block wall"></div>
+            <div id="map[10][5]" class="block floor"></div>
             <div id="map[10][6]" class="block wall"></div>
-            <div id="map[10][7]" class="block wall"></div>
+            <div id="map[10][7]" class="block floor"></div>
             <div id="map[10][8]" class="block wall"></div>
-            <div id="map[10][9]" class="block wall"></div>
+            <div id="map[10][9]" class="block floor"></div>
             <div id="map[10][10]" class="block wall"></div>
-            <div id="map[10][11]" class="block wall"></div>
+            <div id="map[10][11]" class="block floor"></div>
             <div id="map[10][12]" class="block wall"></div>
-            <div id="map[10][13]" class="block wall"></div>
+            <div id="map[10][13]" class="block floor"></div>
             <div id="map[10][14]" class="block wall"></div>
-            <div id="map[10][15]" class="block wall"></div>
+            <div id="map[10][15]" class="block floor"></div>
             <div id="map[10][16]" class="block wall"></div>
-            <div id="map[10][17]" class="block wall"></div>
+            <div id="map[10][17]" class="block floor"></div>
             <div id="map[10][18]" class="block wall"></div>
-            <div id="map[10][19]" class="block wall"></div>
+            <div id="map[10][19]" class="block floor"></div>
             <div id="map[10][20]" class="block wall"></div>
         </div>
         <div id="r11" class="row">
             <div id="map[11][0]" class="block wall"></div>
-            <div id="map[11][1]" class="block wall"></div>
-            <div id="map[11][2]" class="block wall"></div>
-            <div id="map[11][3]" class="block wall"></div>
-            <div id="map[11][4]" class="block wall"></div>
-            <div id="map[11][5]" class="block wall"></div>
+            <div id="map[11][1]" class="block floor"></div>
+            <div id="map[11][2]" class="block floor"></div>
+            <div id="map[11][3]" class="block floor"></div>
+            <div id="map[11][4]" class="block floor"></div>
+            <div id="map[11][5]" class="block floor"></div>
             <div id="map[11][6]" class="block wall"></div>
-            <div id="map[11][7]" class="block wall"></div>
+            <div id="map[11][7]" class="block floor"></div>
             <div id="map[11][8]" class="block wall"></div>
-            <div id="map[11][9]" class="block wall"></div>
+            <div id="map[11][9]" class="block floor"></div>
             <div id="map[11][10]" class="block wall"></div>
-            <div id="map[11][11]" class="block wall"></div>
-            <div id="map[11][12]" class="block wall"></div>
-            <div id="map[11][13]" class="block wall"></div>
+            <div id="map[11][11]" class="block floor"></div>
+            <div id="map[11][12]" class="block floor"></div>
+            <div id="map[11][13]" class="block floor"></div>
             <div id="map[11][14]" class="block wall"></div>
-            <div id="map[11][15]" class="block wall"></div>
+            <div id="map[11][15]" class="block floor"></div>
             <div id="map[11][16]" class="block wall"></div>
-            <div id="map[11][17]" class="block wall"></div>
+            <div id="map[11][17]" class="block floor"></div>
             <div id="map[11][18]" class="block wall"></div>
-            <div id="map[11][19]" class="block wall"></div>
+            <div id="map[11][19]" class="block floor"></div>
             <div id="map[11][20]" class="block wall"></div>
         </div>
         <div id="r12" class="row">
             <div id="map[12][0]" class="block wall"></div>
-            <div id="map[12][1]" class="block wall"></div>
+            <div id="map[12][1]" class="block floor"></div>
             <div id="map[12][2]" class="block wall"></div>
             <div id="map[12][3]" class="block wall"></div>
             <div id="map[12][4]" class="block wall"></div>
@@ -295,40 +296,40 @@
             <div id="map[12][6]" class="block wall"></div>
             <div id="map[12][7]" class="block wall"></div>
             <div id="map[12][8]" class="block wall"></div>
-            <div id="map[12][9]" class="block wall"></div>
+            <div id="map[12][9]" class="block floor"></div>
             <div id="map[12][10]" class="block wall"></div>
             <div id="map[12][11]" class="block wall"></div>
             <div id="map[12][12]" class="block wall"></div>
             <div id="map[12][13]" class="block wall"></div>
             <div id="map[12][14]" class="block wall"></div>
-            <div id="map[12][15]" class="block wall"></div>
+            <div id="map[12][15]" class="block floor"></div>
             <div id="map[12][16]" class="block wall"></div>
-            <div id="map[12][17]" class="block wall"></div>
+            <div id="map[12][17]" class="block floor"></div>
             <div id="map[12][18]" class="block wall"></div>
-            <div id="map[12][19]" class="block wall"></div>
+            <div id="map[12][19]" class="block floor"></div>
             <div id="map[12][20]" class="block wall"></div>
         </div>
         <div id = "r13" class="row">
             <div id="map[13][0]" class="block wall"></div>
-            <div id="map[13][1]" class="block wall"></div>
-            <div id="map[13][2]" class="block wall"></div>
-            <div id="map[13][3]" class="block wall"></div>
-            <div id="map[13][4]" class="block wall"></div>
-            <div id="map[13][5]" class="block wall"></div>
-            <div id="map[13][6]" class="block wall"></div>
-            <div id="map[13][7]" class="block wall"></div>
+            <div id="map[13][1]" class="block floor"></div>
+            <div id="map[13][2]" class="block floor"></div>
+            <div id="map[13][3]" class="block floor"></div>
+            <div id="map[13][4]" class="block floor"></div>
+            <div id="map[13][5]" class="block floor"></div>
+            <div id="map[13][6]" class="block floor"></div>
+            <div id="map[13][7]" class="block floor"></div>
             <div id="map[13][8]" class="block wall"></div>
-            <div id="map[13][9]" class="block wall"></div>
-            <div id="map[13][10]" class="block wall"></div>
-            <div id="map[13][11]" class="block wall"></div>
-            <div id="map[13][12]" class="block wall"></div>
-            <div id="map[13][13]" class="block wall"></div>
-            <div id="map[13][14]" class="block wall"></div>
-            <div id="map[13][15]" class="block wall"></div>
+            <div id="map[13][9]" class="block floor"></div>
+            <div id="map[13][10]" class="block floor"></div>
+            <div id="map[13][11]" class="block floor"></div>
+            <div id="map[13][12]" class="block floor"></div>
+            <div id="map[13][13]" class="block floor"></div>
+            <div id="map[13][14]" class="block floor"></div>
+            <div id="map[13][15]" class="block floor"></div>
             <div id="map[13][16]" class="block wall"></div>
-            <div id="map[13][17]" class="block wall"></div>
-            <div id="map[13][18]" class="block wall"></div>
-            <div id="map[13][19]" class="block wall"></div>
+            <div id="map[13][17]" class="block floor"></div>
+            <div id="map[13][18]" class="block floor"></div>
+            <div id="map[13][19]" class="block floor"></div>
             <div id="map[13][20]" class="block wall"></div>
         </div>
         <div id = "r14" class="row">

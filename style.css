@@ -36,22 +36,52 @@ body {
     from {margin-left: -33px;}
     to {margin-left: 0;}
 }
-.slideRight {animation-name: slideRight;}
+.slideRight {
+    animation-name: slideRight;
+}
 
 @keyframes slideLeft {
     from {margin-right: -33px;}
     to {margin-right: 0;}
 }
-.slideLeft {animation-name: slideRight;}
+.slideLeft {
+    animation-name: slideLeft;
+}
 
 @keyframes slideUp {
     from {margin-bottom: -33px;}
     to {margin-bottom: 0;}
 }
-.slideUp {animation-name: slideRight;}
+.slideUp {
+    animation-name: slideUp;
+}
 
 @keyframes slideDown {
     from {margin-top: -33px;}
     to {margin-top: 0;}
 }
-.slideDown {animation-name: slideRight;}
+.slideDown {
+    animation-name: slideDown;
+}
+
+.winner {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    padding-top: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 75px;
+    color: red;
+    animation-duration: 1000ms;
+}
+#reset {
+    font-family: 'American Typewriter';
+    background-color: gainsboro;
+    background-image: linear-gradient(gainsboro, rosybrown);
+    font-size: 17px;
+    border: 2px solid lightslategray;
+    border-radius: 15%;
+    padding: 5px;
+    margin-bottom: 3px;
+}

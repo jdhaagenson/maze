@@ -47,22 +47,12 @@ const displayRow = function(rowStr, index) {
 
 map.forEach(displayRow)
 
-const compareArrays = function(array1) {
-    for (let i=0; i<array1.length; i++) {
-        for (let j=0; j<array1.length; j++) {
-            if (array1[i][j] === "W") {
-                let div1 = document.getElementById("map["+i+"]["+j+"]")
-                div1.classList.add("wall")
-            } else if (array1[i][j] === " ") {
-                let div1 = document.getElementById("map["+i+"]["+j+"]")
-                div1.classList.add('floor')
-            }
-        }
-    }
-}
-compareArrays(map)
+let startDiv = document.getElementsByClassName('start')
 let playerDiv = document.createElement('div')
 playerDiv.classList.add('player')
+startDiv[0].appendChild(playerDiv)
+
+
 
 let playerRow = 9
 let playerBlock = 0
@@ -96,13 +86,20 @@ const movePlayer = function(event) {
             }
             break;
         case 'd':
-            if (0<playerBlock<21) {
+            if (0<playerBlock<22) {
                 console.log('still on map')
                 if (map[playerRow][playerBlock+1]==' ') {
                     playerBlock+=1
                     let newDiv = document.getElementById("map["+playerRow+"]["+playerBlock+"]")
                     newDiv.appendChild(playerDiv)
-                    console.log("move right one")
+                } else if (map[playerRow][playerBlock+1]=='F') {
+                    playerBlock+=1
+                    let newDiv = document.getElementById("map["+playerRow+"]["+playerBlock+"]")
+                    newDiv.appendChild(playerDiv)
+                    let winner = document.createElement('div')
+                    winner.classList.add('winner', 'slideUp')
+                    winner.innerText = 'You Win!'
+                    maze.appendChild(winner)
 
                 }
             }
@@ -114,7 +111,10 @@ const movePlayer = function(event) {
                     playerBlock-=1
                     let newDiv = document.getElementById("map["+playerRow+"]["+playerBlock+"]")
                     newDiv.appendChild(playerDiv)
-
+                } else if (map[playerRow][playerBlock-1]=="S") {
+                    playerBlock-=1
+                    let newDiv = document.getElementById("map["+playerRow+"]["+playerBlock+"]")
+                    newDiv.appendChild(playerDiv)
                 }
             }
             break;
@@ -138,4 +138,5 @@ document.addEventListener('keydown', movePlayer);
 //     document.getElementById('box').style.top = boxTop + 'px'
 //     document.getElementById('box').style.left = boxLeft + 'px'
 // }
+
 
