@@ -1,3 +1,0 @@
-
-
-const movePlayer = function(event) {}
