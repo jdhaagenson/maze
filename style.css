@@ -1,0 +1,57 @@
+:root {
+    box-sizing: border-content;
+}
+body {
+    font-family: monospace;
+    font-size: 32px;
+}
+#maze {
+    display: flex;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    flex-direction: row;
+}
+.block {
+    width:32px;
+    height:32px;
+}
+.wall {
+    background-image:url("wall.png");
+}
+.floor, .start, .finish {
+    background-image: url("floor.png")
+}
+.player {
+    background-image: url("player.png");
+    width: 32px;
+    height: 32px;
+    animation-duration: 100ms;
+    position: absolute;
+
+}
+
+@keyframes slideRight {
+    from {margin-left: -33px;}
+    to {margin-left: 0;}
+}
+.slideRight {animation-name: slideRight;}
+
+@keyframes slideLeft {
+    from {margin-right: -33px;}
+    to {margin-right: 0;}
+}
+.slideLeft {animation-name: slideRight;}
+
+@keyframes slideUp {
+    from {margin-bottom: -33px;}
+    to {margin-bottom: 0;}
+}
+.slideUp {animation-name: slideRight;}
+
+@keyframes slideDown {
+    from {margin-top: -33px;}
+    to {margin-top: 0;}
+}
+.slideDown {animation-name: slideRight;}
